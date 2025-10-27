@@ -1,3 +1,4 @@
+Lab Booking System is a PHP and MySQL-based web application developed for college use. It allows teachers to book labs, classrooms, and interactive rooms in real time while checking availability. The system supports fixed and dynamic bookings, auto-expiry of expired slots, HOD email notifications, and an intuitive timetable-based interface.
 College Lab Booking System
 Overview
 
