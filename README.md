@@ -1,106 +1,110 @@
-The Lab Booking System is a web-based application developed for colleges to manage and streamline the process of booking computer labs and classrooms.
-It allows teachers to book available labs, view existing schedules, and avoid scheduling conflicts. The system also includes features for administrators to manage lab timetables, view bookings, and ensure efficient utilization of institutional resources.
+College Lab Booking System
+Overview
+
+The College Lab Booking System is a web-based application developed to simplify and automate the process of booking computer labs and classrooms in colleges.
+
+It provides a centralized platform where teachers can check real-time availability, book labs without conflicts, and manage schedules efficiently. The system also allows administrators to oversee bookings, manage timetables, and ensure proper utilization of institutional resources.
 
 Objective
 
-To automate the manual lab booking process in colleges by creating a centralized online platform that ensures efficient lab utilization, avoids double bookings, and provides transparency for all users.
+The main objective of this project is to replace the traditional manual lab booking process with a centralized digital system that:
 
-Features
+Prevents double bookings
 
-Teacher login with authentication.
+Ensures efficient lab utilization
 
-Real-time availability of labs and time slots.
+Provides transparency for teachers and administrators
 
-Organized block and lab selection (Blocks A–F with multiple labs).
+Automates notifications and booking management
 
-Supports both fixed timetable slots and flexible bookings.
+Key Features
 
-Automatic deletion of expired bookings.
+Secure teacher login with authentication
 
-Email notifications to HODs using PHPMailer when a booking is made.
+Real-time lab and time-slot availability
 
-Smart search functionality to find available labs based on block, type, day, and time.
+Structured block and lab organization (Blocks A–F with multiple labs)
 
-Admin dashboard for full control over bookings and timetables.
+Support for both fixed timetable slots and flexible bookings
 
-Database integration to store user details, bookings, and schedules.
+Automatic removal of expired bookings
+
+Email notifications to HODs upon booking
+
+Smart search functionality (based on block, type, day, and time)
+
+Admin dashboard with full booking and timetable control
+
+Centralized database integration for users and schedules
+
+System Modules
+1. Teacher Module
+
+Login authentication
+
+View available labs
+
+Book and manage time slots
+
+Receive booking confirmations
+
+2. Admin Module
+
+Manage blocks and labs
+
+Control fixed timetables
+
+View and delete bookings
+
+Monitor system usage
+
+3. Notification Module
+
+Automatically sends email notifications to respective HODs when a booking is made
+
+4. Smart Search Module
+
+Allows searching available labs based on multiple filters
+
+Database Structure
+
+The system includes the following main tables:
+
+users – Stores teacher login details and department information
+
+hods – Contains department-wise HOD email addresses
+
+bookings – Stores dynamic lab booking records
+
+fixed_bookings – Stores predefined timetable slots
 
 Technologies Used
 
 Frontend: HTML, CSS, JavaScript, AJAX
 
-Backend: PHP (XAMPP environment)
+Backend: PHP
 
 Database: MySQL
 
 Email Integration: PHPMailer
 
-Server Environment: Apache (via XAMPP)
-
-Installation & Setup
-
-Download or clone the repository:
-
-git clone https://github.com/yourusername/labbooking.git
-
-
-Extract the files into your local server directory (for example, htdocs in XAMPP).
-
-Create a MySQL database named lab_booking.
-
-Import the provided SQL file (lab_booking.sql) into phpMyAdmin.
-
-Configure email settings (sender address and app password) inside PHPMailer files.
-
-Start Apache and MySQL using XAMPP Control Panel.
-
-Open the application in your browser:
-
-http://localhost/labbooking/
-
-Usage
-
-For Teachers:
-
-Log in using valid credentials.
-
-Check lab availability and make bookings.
-
-Receive email confirmation after booking.
-
-For Admins:
-
-Manage labs, blocks, and timetables.
-
-View, modify, or delete bookings.
-
-Send email notifications to HODs.
-
-Database Structure
-
-users – Stores teacher credentials and department details.
-
-hods – Contains HOD email and department data for notifications.
-
-bookings – Records lab booking details.
-
-fixed_bookings – Contains predefined timetable slots.
+Server Environment: Apache (XAMPP)
 
 Future Enhancements
 
-Student portal for viewing lab availability.
+Student portal for viewing lab availability
 
-Integration for classroom and interactive room bookings.
+Integration for classroom and interactive room booking
 
-Calendar-based view for easier schedule visualization.
+Calendar-based visual timetable view
 
-AI-based system for conflict detection and automated suggestions.
+AI-based intelligent conflict detection and booking suggestions
 
 Developer Information
 
 Project Title: College Lab Booking System
-Developed by: Dhruva D
-College Name: Vidya Vardhaka College of Engineering 
+Developed By: Dhruva D
+College: Vidya Vardhaka College of Engineering
 Role: Full Stack Web Developer
-Technologies Used: PHP, MySQL, HTML, CSS, JavaScript
+Technologies: PHP, MySQL, HTML, CSS, JavaScript
 Year: 2025
